@@ -1,12 +1,22 @@
-
+/* 
+It is better to have a comment here mentioning the question (problem you are solb=ving and explaining your solution
+*/
 #include <bits/stdc++.h>
 using namespace std;
+
+/* 
+Did you test this code with an example?
+I think the solution does not achieve the task
+
+Duplicates do not onluy occur in consecutive elements. 
+Element at postion 5 could heve it's duplicate at position 10000000.
+*/
 
 // Function to remove duplicate elements This function
 int removeDuplicates(int nums[], int n)
 {
-	if (n == 0 || n == 1)
-		return n;
+	if (n == 0 || n == 1)  // This is very good 
+		return n; 
 
 	int temp[n];
 
