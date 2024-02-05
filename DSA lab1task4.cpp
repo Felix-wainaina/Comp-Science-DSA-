@@ -14,15 +14,12 @@ private:
     Node<T>* head;
 
 public:
-    // Constructor
     List() : head(nullptr) {}
 
-    // Destructor
     ~List() {
         Node<T>* current = head;
         Node<T>* next;
 
-        // Delete all nodes
         while (current != nullptr) {
             next = current->next;
             delete current;
@@ -30,15 +27,12 @@ public:
         }
     }
 
-    // Add an element to the list
     void addElement(T data) {
         Node<T>* newNode = new Node<T>{data, nullptr};
-
-        // If the list is empty, set the new node as the head
+        
         if (head == nullptr) {
             head = newNode;
         } else {
-            // Otherwise, add the new node at the end
             Node<T>* current = head;
             while (current->next != nullptr) {
                 current = current->next;
@@ -47,7 +41,6 @@ public:
         }
     }
 
-    // Other operations such as remove, search, etc. can be added as needed
 };
 
 int main() {
@@ -56,8 +49,6 @@ int main() {
     intList.addElement(1);
     intList.addElement(2);
     intList.addElement(3);
-
-    // Perform operations on the list...
 
     return 0;
 }
