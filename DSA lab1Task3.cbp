@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+
+class Course {
+public:
+    std::string course_code;
+    std::string course_name;
+};
+
+class Grade {
+public:
+    int mark;
+    char the_grade;
+};
+
+class Student {
+public:
+    std::string registration_number;
+    std::string name;
+    int age;
+    Course course;
+    Grade grades;
+};
+
+int main() {
+    const int max_students = 40;
+    Student students[max_students];
+
+    // Code to add students, edit details, add marks, and calculate grades
+
+    return 0;
+}
+
+
