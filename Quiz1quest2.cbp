@@ -42,4 +42,3 @@ int main()
 	RightRotate(Array, N, K);
 }
 
-// This code is contributed by Surendra_Gangwar
