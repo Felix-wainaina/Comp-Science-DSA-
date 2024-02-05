@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+bool checkDuplicatesWithinK(int arr[], int n, int k)
+{
+	// traversing the input array
+	for (int i = 0; i < n; i++) {
+		int j = i + 1;
+		int range = k;
+		// searching in next k-1 elements if its duplicate
+		// is present or not
+		while (range > 0 and j < n) {
+			if (arr[i] == arr[j])
+				return true;
+			j++;
+			range--;
+		}
+	}
+	return false;
+}
